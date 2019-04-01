@@ -1,0 +1,33 @@
+<div class="grid-list-container">
+  <mat-grid-list [cols]="columns$ | async"
+                  gutterSize="16">
+    <mat-grid-tile class="tile" *ngFor="let person of people$ | async">
+       <a class="tile__content"
+          fxLayout="column"
+         fxLayoutAlign="center center"
+         [routerLink]="['/people', person.id]">
+
+        <span class="tile__role"
+              ngClass.xs="tile__role--xs"> Role:
+           {{ person.role  }}
+        </span>
+
+        <div class="tile__thumbnail"
+             [ngStyle]="{'background-image': 'url(' + person.imageUrl + ')'}"></div>
+
+        <div class="tile__title"
+             ngClass.xs="tile__title--xs"
+             ngClass.sm="tile__title--sm">{{ person.name }}</div>
+
+        <div class="content"
+             ngClass.xs="tile__content--xs"
+             ngClass.sm="tile__content--sm">About: {{ person.about }}</div>
+            
+         <div class="content"
+             ngClass.xs="tile__content--xs"
+             ngClass.sm="tile__content--sm">Skills: {{ person.skills }}</div>
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+

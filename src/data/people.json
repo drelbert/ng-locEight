@@ -1,0 +1,47 @@
+[
+    {
+    "id" : 999,
+    "role" : "El General", 
+    "name" : "Han Solo", 
+    "team" : "El Management", 
+    "email" : "han@mail.resistance.org",
+    "ninjaRating" : 2.5, 
+    "skills" : ["Hot wiring X-wings, fund raising, evading Storm Troopers, leadership"],
+    "about" : "Leader with a prestigious record of leading.",
+    "imageUrl" : "data/img/personIcon.png"
+    },
+        {
+    "id" : 969,
+    "role" : "Jedi", 
+    "name" : "Rey", 
+    "team" : "Strike Force", 
+    "email" : "rey@mail.resistance.org",
+    "ninjaRating" : 4, 
+    "skills" : ["Droid Languages, The Force"],
+    "about" : "Up and coming Jedi with a knack for troubleshooting and brain interoperability.",
+    "imageUrl" : "data/img/personIcon.png"
+    },
+            {
+    "id" : 805,
+    "role" : "Chief Darklord", 
+    "name" : "Vader", 
+    "team" : "Dark Side", 
+    "email" : "vader@mail.darkside.org",
+    "ninjaRating" : 3.5, 
+    "skills" : ["The Force, Evil, Raiding Resistance Ships, Leadership"],
+    "about" : "Up and coming Jedi with a knack for troubleshooting and brain interoperability.",
+    "imageUrl" : "data/img/personIcon.png"
+    }, 
+
+                {
+    "id" : 202,
+    "role" : "Master Droid", 
+    "name" : "R2-D2", 
+    "team" : "Encoding", 
+    "email" : "r2-d2@mail.resistance.org",
+    "ninjaRating" : 3.5, 
+    "skills" : ["Keeper of secrets, Fighter Co-pilot, Overrides and opens anything with a port"],
+    "about" : "The go to droid with still unknown skills.",
+    "imageUrl" : "data/img/personIcon.png"
+    }
+  ]

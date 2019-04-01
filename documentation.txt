@@ -1,0 +1,80 @@
+//The Rebuild
+
+//SASS 
+    is 
+    syntactically awesome style sheets 
+        extension of CSS 
+
+    has 
+        two syntaxes 
+            Sass 
+            SCSS 
+                will use this one 
+
+                quick intro to SCSS syntax
+                    Variables = start w $ sign 
+
+                    Nesting = for writing nested CSS selectors 
+
+                    Mixins = a block of Sass style 
+
+                    Partials = jsut filters with code fragments 
+
+                    Imports = for importing styles from other files 
+
+//Adding home module 
+    is 
+        about creating views as feature modules
+            for lazy loading 
+                 and each view will be built as a separate bundle 
+
+                 generated 
+                    module home 
+                
+                next generate 
+                    component home 
+
+//Ch8 
+    priciple
+        is 
+            best if components do not know about each other 
+            but still can pass data around 
+
+
+    intercomponent communication 
+        was 
+            loose coupling components with 
+                dependency injection
+        
+        can also be 
+            bindings 
+            events 
+
+    Angualar component 
+        as a 
+        Black Box with outlets 
+        @Output
+        @Input 
+
+    receiving values from outside world 
+        bind producers of values to inputs of the component 
+            the component only needs to know how to deal with the values 
+
+    alternatively
+        emit events through an output property 
+
+
+    mediator design pattern 
+    is 
+        implementing the communication between looely coupled components 
+
+    does 
+        ensure the components properly fit together
+        given the task  
+
+        user = mediator 
+        blocks = components
+
+
+
+    

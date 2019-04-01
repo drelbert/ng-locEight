@@ -1,0 +1,35 @@
+[
+    {
+        "title" : "Raise 10m for new hyperdrive",
+        "projectId" : 273,
+        "lead" : "Han",
+        "dueDate" : "2019-10-10",
+        "completedLastWeek" : "Obtained 3m",
+        "doingNextWeek" : "Raid mine on Tri Nui for left over crystals",
+        "issues" : "Han's gambling, loosing The Falcon",
+        "lastUpdatedBy" : "Lea",
+        "imageUrl" : "data/img/projectIcon.png"
+    },
+    {
+        "title" : "Steal Boba Fet's Ship",
+        "projectId" : 595,
+        "lead" : "Han",
+        "dueDate" : "2019-12-29",
+        "completedLastWeek" : "Locate blueprints for ship",
+        "doingNextWeek" : "Hire crew of 5",
+        "issues" : "Tracking of the ship is impossible",
+        "lastUpdatedBy" : "Han",
+        "imageUrl" : "data/img/projectIcon.png"
+    },
+    {
+        "title" : "Complete 4 week training with Luke",
+        "projectId" : 888,
+        "lead" : "Rey",
+        "dueDate" : "2019-12-29",
+        "completedLastWeek" : "Booked travel on Falcon",
+        "doingNextWeek" : "Pack food",
+        "issues" : "Falcon may be in use for party",
+        "lastUpdatedBy" : "Rey",
+        "imageUrl" : "data/img/projectIcon.png"
+    }
+]

@@ -1,0 +1,29 @@
+<mat-toolbar class="toolbar">
+  <button class="toolbar__icon-button" mat-icon-button>
+     <mat-icon>menu</mat-icon>
+  </button>
+
+  <div class="toolbar__logo-title-group"
+       fxLayout
+       fxLayoutAlign="center center">
+     <a routerLink="/"
+        fxLayout>
+      <img mat-icon class="toolbar__baseline-perm_identity">
+    </a>
+    <a class="toolbar__title"
+        routerLink="/">LocEight</a>
+  </div>
+
+
+  <div fxFlex></div>
+
+  <button mat-icon-button class="toolbar__icon-button
+                    toolbar__code">
+    <mat-icon>code</mat-icon>
+  </button>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+
+
