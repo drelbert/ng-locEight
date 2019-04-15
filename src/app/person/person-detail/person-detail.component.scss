@@ -1,0 +1,53 @@
+@import '../../../styles/theme';
+
+:host {
+  display: block;
+}
+
+.wrapper {
+  background-color: mat-color($nga-background, card);
+  padding: 64px 24px;
+  height: 100%;
+}
+
+.wrapper--lt-md {
+  padding: 32px 16px;
+}
+
+.wrapper--gt-md {
+  padding: 128px 24px;
+}
+
+.thumbnail {
+  display: block;
+  margin: 0 auto;
+  max-width: 30vmin;
+}
+
+.info {
+  max-width: 400px;
+}
+
+.info__name {
+  color: mat-color($nga-foreground, text);
+  font-size: mat-font-size($nga-typography, display-2);
+  font-weight: mat-font-weight($nga-typography, display-4);
+  line-height: mat-line-height($nga-typography, display-2);
+  margin: 0 0 24px;
+}
+
+.info__role {
+  color: mat-color($nga-foreground, secondary-text);
+  font-size: mat-font-size($nga-typography, subheading-2);
+  font-weight: mat-font-weight($nga-typography, subheading-2);
+  line-height: mat-line-height($nga-typography, subheading-1);
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 24px;
+}
+
+.info__about {
+  color: mat-color($nga-foreground, secondary-text);
+  font-size: mat-font-size($nga-typography, subheading-2);
+  font-weight: mat-font-weight($nga-typography, subheading-2);
+  line-height: mat-line-height($nga-typography, subheading-1);
+}

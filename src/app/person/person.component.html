@@ -1,0 +1,22 @@
+<div class="wrapper"
+     fxLayout="column"
+     fxLayout.gt-md="row-reverse">
+
+  <loc-person-detail
+      fxFlex="auto"
+       fxFlex.gt-md="65%"
+      *ngIf="person$ | async as person"
+       [person]="person">
+   </loc-person-detail>
+
+
+  <loc-person-suggestion
+      fxFlex="auto"
+      fxFlex.gt-md="35%"
+      *ngIf="suggestedPeople$ | async as people"
+       [people]="people">
+   </loc-person-suggestion>
+
+</div>
+
+

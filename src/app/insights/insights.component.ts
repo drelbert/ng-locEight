@@ -3,7 +3,10 @@ import {map} from 'rxjs/operators';
 
 import {Component} from '@angular/core';
 import {MediaObserver} from '@angular/flex-layout';
+
+
 import {Project, ProjectService} from '../shared/services/project.service';
+
 
 @Component({
   selector: 'loc-insights',
@@ -21,6 +24,7 @@ export class InsightsComponent {
     [ 'lg', 4 ],
     [ 'xl', 5 ],
   ]);
+
 
   constructor(private media: MediaObserver,
               private projectService: ProjectService) {

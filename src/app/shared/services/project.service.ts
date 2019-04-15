@@ -29,4 +29,11 @@ export class ProjectService {
     map(projects => <Project>projects.find(p => p.projectId === projectId))
   );
   }
+
+  getNextDue(dueDate: Date): Observable<Project> {
+    return this.http.get<Project[]>('/data/projects.json')
+    .pipe(
+      map(projects => <Project>projects.find(p => p.dueDate === dueDate ))
+    );
+  }
 }

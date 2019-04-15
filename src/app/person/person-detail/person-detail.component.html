@@ -1,0 +1,25 @@
+<div class="wrapper"
+     ngClass.lt-md="wrapper--lt-md"
+     ngClass.gt-md="wrapper--gt-md"
+     fxLayout="row"
+     fxLayoutAlign="center"
+     fxLayout.xs="column"
+     fxLayoutAlign.xs="center center">
+
+  <div fxFlex="50%">
+     <img class="thumbnail"
+         [attr.alt]="person.name"
+         [attr.src]="person.imageUrl">
+  </div>
+
+  <div fxFlex="50%">
+     <div class="info">
+      <h1 class="info__name">{{person?.name}}</h1>
+      <div class="info__role">Role: {{person?.role}}</div>
+      <h3 class="info__about">About: {{person?.about}}</h3>
+      </div>
+      
+    </div>
+  </div>
+
+

@@ -1,0 +1,20 @@
+<div class="info__title" fxLayout="row">More people to consider:</div>
+
+<mat-grid-list [cols]="columns$ | async" gutterSize="16px">
+  <mat-grid-tile class="tile" *ngFor="let person of people">
+    <a class="tile__content"
+       fxLayout
+       fxLayoutAlign="center center"
+       [routerLink]="['/people', person.id]">
+
+      <div class="tile__thumbnail"
+           [ngStyle]="{'background-image': 'url(' + person.imageUrl + ')'}">
+          </div>
+          
+          <h2 class="tile__content">{{person?.name}}</h2>
+    </a>
+    
+  </mat-grid-tile>
+</mat-grid-list>
+
+
