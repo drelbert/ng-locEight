@@ -4,6 +4,24 @@
   display: block;
 }
 
+
+.grid-container {
+  margin: 20px;
+}
+
+.card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.card-content {
+  text-align: center;
+}
+
+
 .wrapper {
   background-color: mat-color($nga-background, card);
   padding: 64px 24px;

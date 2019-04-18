@@ -5,22 +5,24 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
-
-import { PersonService } from './shared/services/people.service';
-import { ProjectService } from './shared/services/project.service';
-import {routes} from './app.routing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule, MatMenuModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 
 
+import { PersonService } from './shared/services/people.service';
+import { ProjectService } from './shared/services/project.service';
+import {routes} from './app.routing';
+
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { LayoutModule } from '@angular/cdk/layout';
      MatToolbarModule,
      FlexLayoutModule,
      MatCardModule,
+     MatSidenavModule,
      HttpClientModule,
      RouterModule.forRoot(routes),
      BrowserAnimationsModule,

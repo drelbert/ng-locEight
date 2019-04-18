@@ -1,20 +1,18 @@
-<div class="info__title" fxLayout="row">More people to consider:</div>
+<div class="grid-container">
+    <h1 class="mat-h1">More to Consider</h1>
+    <mat-grid-list cols="1" rowHeight="350px">
+        <mat-card class="card">
+         <mat-list role="list">
+  
+        <mat-list-item role="listitem" *ngFor="let person of people">
+          <a [routerLink]="['/people', person.id]" class="info__name">
+          {{person?.name}}
+          </a>
+        </mat-list-item>
 
-<mat-grid-list [cols]="columns$ | async" gutterSize="16px">
-  <mat-grid-tile class="tile" *ngFor="let person of people">
-    <a class="tile__content"
-       fxLayout
-       fxLayoutAlign="center center"
-       [routerLink]="['/people', person.id]">
-
-      <div class="tile__thumbnail"
-           [ngStyle]="{'background-image': 'url(' + person.imageUrl + ')'}">
-          </div>
-          
-          <h2 class="tile__content">{{person?.name}}</h2>
-    </a>
-    
-  </mat-grid-tile>
-</mat-grid-list>
+      </mat-list>
+    </mat-card>
+    </mat-grid-list>
+  </div>
 
 

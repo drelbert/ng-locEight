@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
+
 
 
 import { PersonComponent } from './person.component';
@@ -20,7 +23,9 @@ import { PersonSuggestionComponent } from './person-suggestion/person-suggestion
       {path: '', 
       component: PersonComponent}
     ]),
-    MatGridListModule
+    MatGridListModule,
+    MatCardModule, 
+    MatListModule
   ],
 
   declarations: [

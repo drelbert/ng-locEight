@@ -1,3 +1,6 @@
+//NPM packages added
+    npm i angular-material
+
 //The Rebuild
 
 //SASS 
@@ -77,4 +80,186 @@
 
 
 
+//Ch 9 
+    Building Module 
+        with parent and children 
+            steps 
+                one 
+                    Update the PersonModule 
+
+                two 
+                    update PersonComponent 
+                        to receive the PersonId
+                        inject PeopleService into constructor 
+                
+                three 
+                    update the PersonComponent html 
+
+                four 
+                    implement the first child 
+                        Person-DetailComponent 
+
+
+            //commands used 
+                ng g c product
+                ng g c product/product-detail
+                ng g c product/product-suggestion
+
+
+//Material IO work 
+    step 1
+        added Angular DevKit 6+ with 
+            ng add @angular/material
+
+                which added the CDK and Angular Animations 
+
+            resulted in updates to 
+            UPDATE src/main.ts (403 bytes)
+            UPDATE src/app/app.module.ts (1207 bytes)
+            UPDATE angular.json (4218 bytes)
+            UPDATE src/index.html (490 bytes)
+            UPDATE src/styles/styles.scss (953 bytes)
+
+    step 2 
+        added Dashboard schematic
+            with 
+            ng generate @angular/material:dashboard people-dashboard
+
+   
+
+
+//Ch 10 
+    Forms API 
+
+    So HTML may work, but limitations are 
+        validation customization
+        submitting data to server 
+        process data 
+        produce user frinedly error messages 
+
+    Angular Forms 
+        treats 
+            form-fields as 
+                first-class 
+                with fine grained control over the data 
+
+        two types
+            template-driven 
+            and 
+            reactive 
+
+    Two Forms API's
+        every Angular-powered form 
+        has 
+            model object that stores form data 
+
+        both types 
+            are exposed as two diff API's 
+                which are a set of directives and TypeScript classes
+
+        for simple forms 
+            tempalte-driven 
+                is 
+                    fully programable 
+                    in the template 
+                    while model object is created implicitly 
+                
+                template defines form structure, validation 
+                limitation
+                    HTML syntax 
+       
+        for non-trivial forms   
+            reactive 
+                must explicitly create model object in TypeScript
+                then link HTML template 
+
+                construct the form model object using 
+                classes
+                    FormControl
+                    FormGroup 
+                    FormArray
+                    
+    template driven forms   
+        simply 
+            use only directives from component templates 
+                FormsModule
+                NgModel
+                NgModelGroup
+                NgForm
+
     
+    reactive forms 
+        simply 
+            steps  are 
+                One import ReactiveFormsModule in NgModule() 
+                 add 'import { ReactiveFormsModule } from '@angular/forms'' line
+                 and 
+                    in 'imports: [' 
+                        ReactiveFormsModule
+                    ]
+
+                Two  in TypeScript code create instance of model object
+                    FormGroup to store values 
+
+                     building the form model 
+                           constructed from these classes
+                             FormControl
+                             FormGroup 
+                             FormArray
+                
+                Three build HTML template with reactive directives 
+                    directives are prefized with 'form' 
+
+
+
+                Four use the instance of the FormGroup to access form's values 
+
+
+       
+        dynamically add controls to froms 
+            
+
+
+            
+//Ch 11 Form Validation 
+
+    using built-in validators 
+        is 
+            Angular forms API 
+                has 
+                    Validators 
+                     is 
+                        a function that conform to the interface 
+
+                        with these static functions
+                        required()   directive to use required 
+                        minLength()  directive to use minLength
+                        etc 
+
+
+            use with 
+                template-driven 
+                reactive 
+
+                    forms 
+
+
+//Ch 12 Interacting w Servers using HTTP 
+
+    simply 
+        communicating with web server via HTTP 
+            for 
+                GET and POST methods  
+
+        overview 
+            web apps run HTTP req asynchronously
+            so UI remains responsive 
+                these requests are implemented 
+                    callbacks
+                    promises
+                    observables 
+
+            
+
+
+            

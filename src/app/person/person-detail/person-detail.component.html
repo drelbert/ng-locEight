@@ -1,16 +1,12 @@
-<div class="wrapper"
-     ngClass.lt-md="wrapper--lt-md"
-     ngClass.gt-md="wrapper--gt-md"
-     fxLayout="row"
-     fxLayoutAlign="center"
-     fxLayout.xs="column"
-     fxLayoutAlign.xs="center center">
-
-  <div fxFlex="50%">
-     <img class="thumbnail"
+<div class="grid-container">
+  <h1 class="mat-h1">People Details</h1>
+   <mat-grid-list cols="1" rowHeight="350px">
+    <mat-card class="card">
+       <div fxFlex="50%">
+          <img class="thumbnail"
          [attr.alt]="person.name"
          [attr.src]="person.imageUrl">
-  </div>
+        </div>
 
   <div fxFlex="50%">
      <div class="info">
@@ -20,6 +16,8 @@
       </div>
       
     </div>
+  </mat-card>
+  </mat-grid-list>
   </div>
 
 

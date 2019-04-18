@@ -5,12 +5,12 @@ export const routes: Route[] = [
     loadChildren: './home/home.module#HomeModule'
   },
   {
-    path: 'people/:personId',
-    loadChildren: './person/person.module#PersonModule'
+    path: 'people',
+    loadChildren: './home/home.module#HomeModule'
   },
   {
-    path: 'insights',
-    loadChildren: './insights/insights.module#InsightsModule'
+    path: 'people/:personId',
+    loadChildren: './person/person.module#PersonModule'
   },
   {
     path: 'login',

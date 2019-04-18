@@ -7,17 +7,18 @@
          fxLayoutAlign="center center"
          [routerLink]="['/people', person.id]">
 
-        <span class="tile__role"
-              ngClass.xs="tile__role--xs"> Role:
-           {{ person.role  }}
-        </span>
 
-        <div class="tile__thumbnail"
+         <div class="tile__thumbnail"
              [ngStyle]="{'background-image': 'url(' + person.imageUrl + ')'}"></div>
+
+        <span class="tile__title"
+              ngClass.xs="tile__title--xs"> 
+           {{ person.name  }}
+        </span>
 
         <div class="tile__title"
              ngClass.xs="tile__title--xs"
-             ngClass.sm="tile__title--sm">{{ person.name }}</div>
+             ngClass.sm="tile__title--sm">Role- {{ person.role }}</div>
 
         <div class="content"
              ngClass.xs="tile__content--xs"

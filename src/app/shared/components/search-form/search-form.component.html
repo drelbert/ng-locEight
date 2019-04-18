@@ -1,0 +1,27 @@
+<!--
+<h1 class="title">Search People</h1>
+
+<form [formGroup]="searchForm" (ngSubmit)="onSearch()" class="form" >
+  <mat-form-field class="form__field">
+    <input matInput type="text" placeholder="Name" formControlName="name">
+    <mat-error>Name is too short.</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form__field">
+    <input matInput type="number" placeholder="Min rating" formControlName="minRating">
+    <mat-error>Cannot be less than 0.</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form__field">
+    <input matInput type="number" placeholder="Max rating" formControlName="maxRating" [errorStateMatcher]="matcher">
+    <mat-error *ngIf="searchForm.controls['maxRating'].hasError('min')">Cannot be less than 0</mat-error>
+    <mat-error *ngIf="searchForm.controls['maxRating'].hasError('max')">Cannot be more than 5</mat-error>
+    <mat-error *ngIf="searchForm.hasError('minLessThanMax')">Should be larger than min rating</mat-error>
+  </mat-form-field>
+
+  <button class="form__submit"
+          color="primary"
+          mat-raised-button>SEARCH</button>
+</form>
+
+-->
